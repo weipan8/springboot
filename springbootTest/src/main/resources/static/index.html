@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="css/GridManager.css">
+	<script type="text/javascript" src="js/GridManager.min.js"></script>
+	
+</head>
+<body>
+	<h1>hello spring-boot</h1>
+	
+		
+		<table grid-manager="demo-baseCode"  ></table>
+		<script type="text/javascript">
+		var table1 = document.querySelector('table[grid-manager="demo-baseCode"]')
+		table1.GM({
+		    ajax_url: '/springboot/getEmps'
+		    ,ajax_type: 'get'
+		    ,dataKey:'data' 
+		    ,supportRemind: true
+		    //,supportAjaxPage:true
+		    //,height:"100%"
+		    ,disableCache: true
+		    ,columnData: [
+		        {
+		            key: 'empName',
+		            text: '名称'
+		        },{
+		            key: 'birthday',
+		            text: '生日' ,
+		           
+		        },{
+		            key: 'salary',
+		            text: '工资'
+		        },{
+		            key: 'telephone',
+		            text: '电话'
+		        },{
+		            key: 'dept',
+		            text: '部门名称',
+            	    template: function(action, rowObject){
+					    return rowObject.dept.deptName
+				    }
+		        }
+		    ]
+		})
+		</script>
+</body>
+</html>

@@ -1,0 +1,664 @@
+18:31:52 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Neither @ContextConfiguration nor @ContextHierarchy found for test class [springbootTest.TestSptingboot], using SpringBootContextLoader
+18:31:52 [INFO][main][org.springframework.test.context.support.AbstractContextLoader]- Could not detect default resource locations for test class [springbootTest.TestSptingboot]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:31:52 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:31:52 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@458c1321, org.springframework.test.context.support.DirtiesContextTestExecutionListener@11438d26, org.springframework.test.context.transaction.TransactionalTestExecutionListener@34cd072c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7a1ebcd8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5faeada1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@528931cf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ea1a8d5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1563da5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf4b8b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@30a3107a]
+18:31:54 [INFO][main][springbootTest.TestSptingboot]- Starting TestSptingboot on DESKTOP-4EJ981U with PID 9364 (started by weipan in D:\Users\admin\weip\springbootTest)
+18:31:54 [INFO][main][springbootTest.TestSptingboot]- The following profiles are active: test
+18:31:54 [INFO][main][org.springframework.web.context.support.GenericWebApplicationContext]- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5403f35f: startup date [Fri Apr 27 18:31:54 CST 2018]; root of context hierarchy
+18:31:54 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+18:31:56 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:31:56 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:31:56 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$43a32471] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:32:00 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5403f35f: startup date [Fri Apr 27 18:31:54 CST 2018]; root of context hierarchy
+18:32:01 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/exception]}" onto public int com.test.controller.Controller.Exception()
+18:32:01 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/getEmps],methods=[GET]}" onto public java.util.Map<java.lang.String, java.util.List<com.test.entity.Emp>> com.test.controller.Controller.getEmps()
+18:32:01 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:32:01 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:32:01 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:32:01 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:32:01 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]- Detected @ExceptionHandler methods in globalExceptionHandler
+18:32:02 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:32:02 [INFO][main][org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping]- Adding welcome page: ServletContext resource [/index.html]
+18:32:03 [INFO][main][springbootTest.TestSptingboot]- Started TestSptingboot in 10.699 seconds (JVM running for 12.437)
+18:32:05 [INFO][main][com.alibaba.druid.pool.DruidDataSource]- {dataSource-1} inited
+18:32:06 [INFO][Thread-3][org.springframework.web.context.support.GenericWebApplicationContext]- Closing org.springframework.web.context.support.GenericWebApplicationContext@5403f35f: startup date [Fri Apr 27 18:31:54 CST 2018]; root of context hierarchy
+18:32:06 [INFO][Thread-3][com.alibaba.druid.pool.DruidDataSource]- {dataSource-1} closed
+18:34:05 [INFO][restartedMain][com.test.app.SpringBootMain]- Starting SpringBootMain on DESKTOP-4EJ981U with PID 12372 (D:\Users\admin\weip\springbootTest\target\classes started by weipan in D:\Users\admin\weip\springbootTest)
+18:34:05 [INFO][restartedMain][com.test.app.SpringBootMain]- The following profiles are active: test
+18:34:06 [INFO][restartedMain][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@629fd27: startup date [Fri Apr 27 18:34:06 CST 2018]; root of context hierarchy
+18:34:07 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+18:34:10 [INFO][restartedMain][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:34:10 [INFO][restartedMain][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:34:10 [INFO][restartedMain][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$feab1141] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:34:12 [INFO][restartedMain][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]- Tomcat initialized with port(s): 18081 (http)
+18:34:13 [INFO][localhost-startStop-1][org.springframework.web.context.ContextLoader]- Root WebApplicationContext: initialization completed in 6817 ms
+18:34:13 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.ServletRegistrationBean]- Mapping servlet: 'dispatcherServlet' to [/]
+18:34:13 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'characterEncodingFilter' to: [/*]
+18:34:13 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:34:13 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:34:13 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'requestContextFilter' to: [/*]
+18:34:16 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@629fd27: startup date [Fri Apr 27 18:34:06 CST 2018]; root of context hierarchy
+18:34:17 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/exception]}" onto public int com.test.controller.Controller.Exception()
+18:34:17 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/getEmps],methods=[GET]}" onto public java.util.Map<java.lang.String, java.util.List<com.test.entity.Emp>> com.test.controller.Controller.getEmps()
+18:34:17 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:34:17 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:34:17 [INFO][restartedMain][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:34:17 [INFO][restartedMain][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:34:17 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]- Detected @ExceptionHandler methods in globalExceptionHandler
+18:34:17 [INFO][restartedMain][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:34:17 [INFO][restartedMain][org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping]- Adding welcome page: class path resource [static/index.html]
+18:34:18 [INFO][restartedMain][org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]- LiveReload server is running on port 35729
+18:34:18 [INFO][restartedMain][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Registering beans for JMX exposure on startup
+18:34:18 [INFO][restartedMain][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Bean with name 'dataSource' has been autodetected for JMX exposure
+18:34:18 [INFO][restartedMain][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+18:34:18 [INFO][restartedMain][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]- Tomcat started on port(s): 18081 (http)
+18:34:18 [INFO][restartedMain][com.test.app.SpringBootMain]- Started SpringBootMain in 13.439 seconds (JVM running for 14.359)
+18:35:15 [INFO][http-nio-18081-exec-2][org.springframework.web.servlet.DispatcherServlet]- FrameworkServlet 'dispatcherServlet': initialization started
+18:35:16 [INFO][http-nio-18081-exec-2][org.springframework.web.servlet.DispatcherServlet]- FrameworkServlet 'dispatcherServlet': initialization completed in 129 ms
+18:35:16 [INFO][http-nio-18081-exec-6][com.test.aspect.WebLogAspect]- 请求开始........11
+18:35:16 [INFO][http-nio-18081-exec-6][com.test.aspect.WebLogAspect]- URL : http://localhost:18081/springboot/getEmps
+18:35:16 [INFO][http-nio-18081-exec-6][com.test.aspect.WebLogAspect]- HTTP_METHOD : GET
+18:35:16 [INFO][http-nio-18081-exec-6][com.test.aspect.WebLogAspect]- IP : 0:0:0:0:0:0:0:1
+18:35:16 [INFO][http-nio-18081-exec-6][com.test.aspect.WebLogAspect]- name:{cPage},value:{1}
+18:35:17 [INFO][http-nio-18081-exec-6][com.alibaba.druid.pool.DruidDataSource]- {dataSource-1} inited
+18:35:18 [INFO][http-nio-18081-exec-6][com.test.aspect.WebLogAspect]- RESPONSE : {data=[com.test.entity.Emp@5c6100aa, com.test.entity.Emp@3acc9478, com.test.entity.Emp@65762eab, com.test.entity.Emp@3320595, com.test.entity.Emp@57823109, com.test.entity.Emp@9b310d5, com.test.entity.Emp@5de4743e, com.test.entity.Emp@4e69dcba, com.test.entity.Emp@8a5a607, com.test.entity.Emp@19813a7e, com.test.entity.Emp@673ae8f4, com.test.entity.Emp@67b664a5, com.test.entity.Emp@428663ca, com.test.entity.Emp@5244e32e, com.test.entity.Emp@6289dcda, com.test.entity.Emp@36ce1f62]}
+18:35:18 [INFO][http-nio-18081-exec-6][com.test.aspect.WebLogAspect]- 请求结束.....
+18:39:04 [INFO][Thread-6][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]- Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@629fd27: startup date [Fri Apr 27 18:34:06 CST 2018]; root of context hierarchy
+18:39:04 [INFO][Thread-6][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Unregistering JMX-exposed beans on shutdown
+18:39:04 [INFO][Thread-6][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Unregistering JMX-exposed beans
+18:39:04 [INFO][Thread-6][com.alibaba.druid.pool.DruidDataSource]- {dataSource-1} closed
+18:39:55 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Neither @ContextConfiguration nor @ContextHierarchy found for test class [springbootTest.TestSptingboot], using SpringBootContextLoader
+18:39:55 [INFO][main][org.springframework.test.context.support.AbstractContextLoader]- Could not detect default resource locations for test class [springbootTest.TestSptingboot]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:39:56 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:39:56 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@458c1321, org.springframework.test.context.support.DirtiesContextTestExecutionListener@11438d26, org.springframework.test.context.transaction.TransactionalTestExecutionListener@34cd072c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7a1ebcd8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5faeada1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@528931cf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ea1a8d5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1563da5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf4b8b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@30a3107a]
+18:39:57 [INFO][main][springbootTest.TestSptingboot]- Starting TestSptingboot on DESKTOP-4EJ981U with PID 3956 (started by weipan in D:\Users\admin\weip\springbootTest)
+18:39:57 [INFO][main][springbootTest.TestSptingboot]- The following profiles are active: test
+18:39:57 [INFO][main][org.springframework.web.context.support.GenericWebApplicationContext]- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5403f35f: startup date [Fri Apr 27 18:39:57 CST 2018]; root of context hierarchy
+18:39:58 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+18:39:59 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:39:59 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:39:59 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c1b5eb89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:02 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5403f35f: startup date [Fri Apr 27 18:39:57 CST 2018]; root of context hierarchy
+18:40:02 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/getEmps],methods=[GET]}" onto public java.util.Map<java.lang.String, java.util.List<com.test.entity.Emp>> com.test.controller.Controller.getEmps()
+18:40:02 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/exception]}" onto public int com.test.controller.Controller.Exception()
+18:40:02 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:40:02 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:40:02 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:40:02 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:40:02 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]- Detected @ExceptionHandler methods in globalExceptionHandler
+18:40:02 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:40:03 [INFO][main][org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping]- Adding welcome page: ServletContext resource [/index.html]
+18:40:03 [INFO][main][springbootTest.TestSptingboot]- Started TestSptingboot in 7.491 seconds (JVM running for 8.896)
+18:40:04 [INFO][main][com.alibaba.druid.pool.DruidDataSource]- {dataSource-1} inited
+18:40:05 [INFO][Thread-3][org.springframework.web.context.support.GenericWebApplicationContext]- Closing org.springframework.web.context.support.GenericWebApplicationContext@5403f35f: startup date [Fri Apr 27 18:39:57 CST 2018]; root of context hierarchy
+18:40:05 [INFO][Thread-3][com.alibaba.druid.pool.DruidDataSource]- {dataSource-1} closed
+18:42:23 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Neither @ContextConfiguration nor @ContextHierarchy found for test class [springbootTest.TestSptingboot], using SpringBootContextLoader
+18:42:23 [INFO][main][org.springframework.test.context.support.AbstractContextLoader]- Could not detect default resource locations for test class [springbootTest.TestSptingboot]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:42:23 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:42:23 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@458c1321, org.springframework.test.context.support.DirtiesContextTestExecutionListener@11438d26, org.springframework.test.context.transaction.TransactionalTestExecutionListener@34cd072c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7a1ebcd8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5faeada1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@528931cf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ea1a8d5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1563da5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf4b8b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@30a3107a]
+18:42:25 [INFO][main][springbootTest.TestSptingboot]- Starting TestSptingboot on DESKTOP-4EJ981U with PID 1120 (started by weipan in D:\Users\admin\weip\springbootTest)
+18:42:25 [INFO][main][springbootTest.TestSptingboot]- The following profiles are active: test
+18:42:25 [INFO][main][org.springframework.web.context.support.GenericWebApplicationContext]- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5403f35f: startup date [Fri Apr 27 18:42:25 CST 2018]; root of context hierarchy
+18:42:25 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+18:42:27 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:42:27 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:42:27 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7d181d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:42:29 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5403f35f: startup date [Fri Apr 27 18:42:25 CST 2018]; root of context hierarchy
+18:42:30 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/exception]}" onto public int com.test.controller.Controller.Exception()
+18:42:30 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/getEmps],methods=[GET]}" onto public java.util.Map<java.lang.String, java.util.List<com.test.entity.Emp>> com.test.controller.Controller.getEmps()
+18:42:30 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:42:30 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:42:30 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:42:30 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:42:30 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]- Detected @ExceptionHandler methods in globalExceptionHandler
+18:42:30 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:42:30 [INFO][main][org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping]- Adding welcome page: ServletContext resource [/index.html]
+18:42:31 [INFO][main][springbootTest.TestSptingboot]- Started TestSptingboot in 7.097 seconds (JVM running for 8.56)
+18:42:32 [INFO][main][com.alibaba.druid.pool.DruidDataSource]- {dataSource-1} inited
+18:42:32 [INFO][Thread-3][org.springframework.web.context.support.GenericWebApplicationContext]- Closing org.springframework.web.context.support.GenericWebApplicationContext@5403f35f: startup date [Fri Apr 27 18:42:25 CST 2018]; root of context hierarchy
+18:42:32 [INFO][Thread-3][com.alibaba.druid.pool.DruidDataSource]- {dataSource-1} closed
+18:54:50 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Neither @ContextConfiguration nor @ContextHierarchy found for test class [springbootTest.TestSptingboot], using SpringBootContextLoader
+18:54:50 [INFO][main][org.springframework.test.context.support.AbstractContextLoader]- Could not detect default resource locations for test class [springbootTest.TestSptingboot]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:54:50 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:54:50 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2833cc44, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@33f88ab, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@27a8c74e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d8f65a4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1b68ddbd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@646d64ab, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@59e5ddf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@536aaa8d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@e320068, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1f57539, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76f2b07d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@704a52ec]
+18:54:52 [INFO][main][springbootTest.TestSptingboot]- Starting TestSptingboot on DESKTOP-4EJ981U with PID 14028 (started by weipan in D:\Users\admin\weip\springbootTest)
+18:54:52 [INFO][main][springbootTest.TestSptingboot]- The following profiles are active: test
+18:54:52 [INFO][main][org.springframework.web.context.support.GenericWebApplicationContext]- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@14555e0a: startup date [Fri Apr 27 18:54:52 CST 2018]; root of context hierarchy
+18:54:53 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+18:54:54 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:54:55 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:54:55 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9fe83747] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:54:55 [WARN][main][org.springframework.web.context.support.GenericWebApplicationContext]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'empMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mapper.EmpMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+18:54:55 [INFO][main][org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer]- 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+18:54:56 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field empMapper in com.test.controller.Controller required a bean of type 'com.test.mapper.EmpMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.test.mapper.EmpMapper' in your configuration.
+
+18:54:56 [ERROR][main][org.springframework.test.context.TestContextManager]- Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2833cc44] to prepare test instance [springbootTest.TestSptingboot@3df978b9]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'empMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mapper.EmpMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mapper.EmpMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 43 more
+18:55:24 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Neither @ContextConfiguration nor @ContextHierarchy found for test class [springbootTest.TestSptingboot], using SpringBootContextLoader
+18:55:24 [INFO][main][org.springframework.test.context.support.AbstractContextLoader]- Could not detect default resource locations for test class [springbootTest.TestSptingboot]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:55:24 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:55:24 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3712b94, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2833cc44, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@33f88ab, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27a8c74e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2d8f65a4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b68ddbd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@646d64ab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@59e5ddf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@536aaa8d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@e320068, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1f57539, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76f2b07d]
+18:55:25 [INFO][main][springbootTest.TestSptingboot]- Starting TestSptingboot on DESKTOP-4EJ981U with PID 7788 (started by weipan in D:\Users\admin\weip\springbootTest)
+18:55:25 [INFO][main][springbootTest.TestSptingboot]- The following profiles are active: test
+18:55:25 [INFO][main][org.springframework.web.context.support.GenericWebApplicationContext]- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7a419da4: startup date [Fri Apr 27 18:55:25 CST 2018]; root of context hierarchy
+18:55:27 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+18:55:28 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:55:28 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:55:28 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec640fd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:55:29 [WARN][main][org.springframework.web.context.support.GenericWebApplicationContext]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'empMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mapper.EmpMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+18:55:29 [INFO][main][org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer]- 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+18:55:29 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field empMapper in com.test.controller.Controller required a bean of type 'com.test.mapper.EmpMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.test.mapper.EmpMapper' in your configuration.
+
+18:55:29 [ERROR][main][org.springframework.test.context.TestContextManager]- Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3712b94] to prepare test instance [springbootTest.TestSptingboot@3c89bb12]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'empMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mapper.EmpMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.mapper.EmpMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 43 more
+18:56:04 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Neither @ContextConfiguration nor @ContextHierarchy found for test class [springbootTest.TestSptingboot], using SpringBootContextLoader
+18:56:04 [INFO][main][org.springframework.test.context.support.AbstractContextLoader]- Could not detect default resource locations for test class [springbootTest.TestSptingboot]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:56:04 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:56:04 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3712b94, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2833cc44, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@33f88ab, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27a8c74e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2d8f65a4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b68ddbd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@646d64ab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@59e5ddf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@536aaa8d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@e320068, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1f57539, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76f2b07d]
+18:56:06 [INFO][main][springbootTest.TestSptingboot]- Starting TestSptingboot on DESKTOP-4EJ981U with PID 7944 (started by weipan in D:\Users\admin\weip\springbootTest)
+18:56:06 [INFO][main][springbootTest.TestSptingboot]- The following profiles are active: test
+18:56:06 [INFO][main][org.springframework.web.context.support.GenericWebApplicationContext]- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7a419da4: startup date [Fri Apr 27 18:56:06 CST 2018]; root of context hierarchy
+18:56:07 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+18:56:08 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:56:08 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:56:09 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4202af35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:56:10 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7a419da4: startup date [Fri Apr 27 18:56:06 CST 2018]; root of context hierarchy
+18:56:11 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:56:11 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:56:11 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:56:11 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:56:11 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]- Detected @ExceptionHandler methods in globalExceptionHandler
+18:56:11 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:56:11 [INFO][main][org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping]- Adding welcome page: ServletContext resource [/index.html]
+18:56:11 [INFO][main][springbootTest.TestSptingboot]- Started TestSptingboot in 6.647 seconds (JVM running for 7.845)
+18:56:11 [ERROR][main][org.springframework.test.context.TestContextManager]- Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@33f88ab] to prepare test instance [springbootTest.TestSptingboot@26f7cdf8]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootTest.TestSptingboot': Unsatisfied dependency expressed through field 'empMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.test1mapper.EmpMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.test1mapper.EmpMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 29 more
+18:56:11 [INFO][Thread-3][org.springframework.web.context.support.GenericWebApplicationContext]- Closing org.springframework.web.context.support.GenericWebApplicationContext@7a419da4: startup date [Fri Apr 27 18:56:06 CST 2018]; root of context hierarchy
+18:57:07 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Neither @ContextConfiguration nor @ContextHierarchy found for test class [springbootTest.TestSptingboot], using SpringBootContextLoader
+18:57:07 [INFO][main][org.springframework.test.context.support.AbstractContextLoader]- Could not detect default resource locations for test class [springbootTest.TestSptingboot]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:57:07 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:57:07 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@74650e52, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15d0c81b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6acdbdf5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b1c1ea0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@17579e0f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4d41cee, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3712b94, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2833cc44, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@33f88ab, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@27a8c74e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2d8f65a4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1b68ddbd]
+18:57:08 [INFO][main][springbootTest.TestSptingboot]- Starting TestSptingboot on DESKTOP-4EJ981U with PID 13544 (started by weipan in D:\Users\admin\weip\springbootTest)
+18:57:08 [INFO][main][springbootTest.TestSptingboot]- The following profiles are active: test
+18:57:08 [INFO][main][org.springframework.web.context.support.GenericWebApplicationContext]- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3fb1549b: startup date [Fri Apr 27 18:57:08 CST 2018]; root of context hierarchy
+18:57:09 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+18:57:09 [INFO][main][org.springframework.beans.factory.support.DefaultListableBeanFactory]- Overriding bean definition for bean 'sqlSessionTemplate1' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisDb1Config; factoryMethodName=sqlSessionTemplate1; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/test/config/MybatisDb1Config.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisDb2Config; factoryMethodName=sqlSessionTemplate1; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/test/config/MybatisDb2Config.class]]
+18:57:10 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:57:10 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:57:11 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c1a84045] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:57:14 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3fb1549b: startup date [Fri Apr 27 18:57:08 CST 2018]; root of context hierarchy
+18:57:14 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:57:14 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:57:14 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:57:14 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:57:14 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]- Detected @ExceptionHandler methods in globalExceptionHandler
+18:57:14 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:57:14 [INFO][main][org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping]- Adding welcome page: ServletContext resource [/index.html]
+18:57:15 [INFO][main][springbootTest.TestSptingboot]- Started TestSptingboot in 7.966 seconds (JVM running for 9.198)
+18:57:16 [ERROR][main][org.springframework.test.context.TestContextManager]- Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6acdbdf5] to prepare test instance [springbootTest.TestSptingboot@76332405]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootTest.TestSptingboot': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.service.TransationalService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.service.TransationalService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 29 more
+18:57:16 [ERROR][main][org.springframework.test.context.TestContextManager]- Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6acdbdf5] to prepare test instance [springbootTest.TestSptingboot@4c86da0c]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootTest.TestSptingboot': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.service.TransationalService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.service.TransationalService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 29 more
+18:57:17 [ERROR][main][org.springframework.test.context.TestContextManager]- Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6acdbdf5] to prepare test instance [springbootTest.TestSptingboot@5ec5ea63]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootTest.TestSptingboot': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.service.TransationalService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.service.TransationalService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 29 more
+18:57:17 [ERROR][main][org.springframework.test.context.TestContextManager]- Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6acdbdf5] to prepare test instance [springbootTest.TestSptingboot@69d45cca]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootTest.TestSptingboot': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.service.TransationalService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.service.TransationalService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 29 more
+18:57:17 [ERROR][main][org.springframework.test.context.TestContextManager]- Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6acdbdf5] to prepare test instance [springbootTest.TestSptingboot@79c5460e]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springbootTest.TestSptingboot': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.service.TransationalService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:386)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.test.service.TransationalService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 29 more
+18:57:17 [INFO][Thread-3][org.springframework.web.context.support.GenericWebApplicationContext]- Closing org.springframework.web.context.support.GenericWebApplicationContext@3fb1549b: startup date [Fri Apr 27 18:57:08 CST 2018]; root of context hierarchy
+18:57:33 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Neither @ContextConfiguration nor @ContextHierarchy found for test class [springbootTest.TestSptingboot], using SpringBootContextLoader
+18:57:33 [INFO][main][org.springframework.test.context.support.AbstractContextLoader]- Could not detect default resource locations for test class [springbootTest.TestSptingboot]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:57:33 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:57:33 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d41cee, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3712b94, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2833cc44, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33f88ab, org.springframework.test.context.transaction.TransactionalTestExecutionListener@27a8c74e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2d8f65a4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b68ddbd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@646d64ab, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59e5ddf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@536aaa8d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@e320068, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1f57539]
+18:57:34 [INFO][main][springbootTest.TestSptingboot]- Starting TestSptingboot on DESKTOP-4EJ981U with PID 14616 (started by weipan in D:\Users\admin\weip\springbootTest)
+18:57:34 [INFO][main][springbootTest.TestSptingboot]- The following profiles are active: test
+18:57:35 [INFO][main][org.springframework.web.context.support.GenericWebApplicationContext]- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2053d869: startup date [Fri Apr 27 18:57:35 CST 2018]; root of context hierarchy
+18:57:35 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+18:57:36 [INFO][main][org.springframework.beans.factory.support.DefaultListableBeanFactory]- Overriding bean definition for bean 'sqlSessionTemplate1' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisDb1Config; factoryMethodName=sqlSessionTemplate1; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/test/config/MybatisDb1Config.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisDb2Config; factoryMethodName=sqlSessionTemplate1; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/test/config/MybatisDb2Config.class]]
+18:57:37 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:57:37 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:57:37 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$472c732f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:57:40 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2053d869: startup date [Fri Apr 27 18:57:35 CST 2018]; root of context hierarchy
+18:57:40 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:57:40 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:57:40 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:57:40 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:57:40 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]- Detected @ExceptionHandler methods in globalExceptionHandler
+18:57:40 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:57:40 [INFO][main][org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping]- Adding welcome page: ServletContext resource [/index.html]
+18:57:41 [INFO][main][springbootTest.TestSptingboot]- Started TestSptingboot in 7.27 seconds (JVM running for 8.66)
+18:57:43 [INFO][Thread-3][org.springframework.web.context.support.GenericWebApplicationContext]- Closing org.springframework.web.context.support.GenericWebApplicationContext@2053d869: startup date [Fri Apr 27 18:57:35 CST 2018]; root of context hierarchy
+18:58:20 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Neither @ContextConfiguration nor @ContextHierarchy found for test class [springbootTest.TestSptingboot], using SpringBootContextLoader
+18:58:20 [INFO][main][org.springframework.test.context.support.AbstractContextLoader]- Could not detect default resource locations for test class [springbootTest.TestSptingboot]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:58:20 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:58:20 [INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]- Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d41cee, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3712b94, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2833cc44, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33f88ab, org.springframework.test.context.transaction.TransactionalTestExecutionListener@27a8c74e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2d8f65a4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b68ddbd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@646d64ab, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59e5ddf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@536aaa8d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@e320068, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1f57539]
+18:58:21 [INFO][main][springbootTest.TestSptingboot]- Starting TestSptingboot on DESKTOP-4EJ981U with PID 3300 (started by weipan in D:\Users\admin\weip\springbootTest)
+18:58:21 [INFO][main][springbootTest.TestSptingboot]- The following profiles are active: test
+18:58:21 [INFO][main][org.springframework.web.context.support.GenericWebApplicationContext]- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2053d869: startup date [Fri Apr 27 18:58:21 CST 2018]; root of context hierarchy
+18:58:22 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+18:58:22 [INFO][main][org.springframework.beans.factory.support.DefaultListableBeanFactory]- Overriding bean definition for bean 'sqlSessionTemplate1' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisDb1Config; factoryMethodName=sqlSessionTemplate1; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/test/config/MybatisDb1Config.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisDb2Config; factoryMethodName=sqlSessionTemplate1; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/test/config/MybatisDb2Config.class]]
+18:58:23 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:58:24 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:58:24 [INFO][main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd16ab20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:58:27 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2053d869: startup date [Fri Apr 27 18:58:21 CST 2018]; root of context hierarchy
+18:58:27 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:58:27 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:58:27 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:58:27 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:58:27 [INFO][main][org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]- Detected @ExceptionHandler methods in globalExceptionHandler
+18:58:27 [INFO][main][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:58:27 [INFO][main][org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping]- Adding welcome page: ServletContext resource [/index.html]
+18:58:28 [INFO][main][springbootTest.TestSptingboot]- Started TestSptingboot in 7.885 seconds (JVM running for 9.266)
+18:58:30 [INFO][Thread-3][org.springframework.web.context.support.GenericWebApplicationContext]- Closing org.springframework.web.context.support.GenericWebApplicationContext@2053d869: startup date [Fri Apr 27 18:58:21 CST 2018]; root of context hierarchy
+19:09:21 [INFO][restartedMain][com.test.app.SpringBootMain]- Starting SpringBootMain on DESKTOP-4EJ981U with PID 13844 (D:\Users\admin\weip\springbootTest\target\classes started by weipan in D:\Users\admin\weip\springbootTest)
+19:09:21 [INFO][restartedMain][com.test.app.SpringBootMain]- The following profiles are active: test
+19:09:22 [INFO][restartedMain][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@629fd27: startup date [Fri Apr 27 19:09:22 CST 2018]; root of context hierarchy
+19:09:23 [INFO][background-preinit][org.hibernate.validator.internal.util.Version]- HV000001: Hibernate Validator 5.3.4.Final
+19:09:25 [INFO][restartedMain][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:09:25 [INFO][restartedMain][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:09:25 [INFO][restartedMain][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec5d8597] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:09:27 [INFO][restartedMain][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]- Tomcat initialized with port(s): 18081 (http)
+19:09:28 [INFO][localhost-startStop-1][org.springframework.web.context.ContextLoader]- Root WebApplicationContext: initialization completed in 6075 ms
+19:09:28 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.ServletRegistrationBean]- Mapping servlet: 'dispatcherServlet' to [/]
+19:09:28 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'characterEncodingFilter' to: [/*]
+19:09:28 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19:09:28 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19:09:28 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'requestContextFilter' to: [/*]
+19:09:30 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@629fd27: startup date [Fri Apr 27 19:09:22 CST 2018]; root of context hierarchy
+19:09:30 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19:09:30 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:09:30 [INFO][restartedMain][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:09:30 [INFO][restartedMain][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:09:30 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]- Detected @ExceptionHandler methods in globalExceptionHandler
+19:09:31 [INFO][restartedMain][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:09:31 [INFO][restartedMain][org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping]- Adding welcome page: class path resource [static/index.html]
+19:09:32 [INFO][restartedMain][org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]- LiveReload server is running on port 35729
+19:09:34 [INFO][restartedMain][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Registering beans for JMX exposure on startup
+19:09:34 [INFO][restartedMain][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Bean with name 'dataSource' has been autodetected for JMX exposure
+19:09:34 [INFO][restartedMain][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+19:09:35 [INFO][restartedMain][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]- Tomcat started on port(s): 18081 (http)
+19:09:35 [INFO][restartedMain][com.test.app.SpringBootMain]- Started SpringBootMain in 14.185 seconds (JVM running for 15.142)
+19:09:41 [INFO][http-nio-18081-exec-1][org.springframework.web.servlet.DispatcherServlet]- FrameworkServlet 'dispatcherServlet': initialization started
+19:09:41 [INFO][http-nio-18081-exec-1][org.springframework.web.servlet.DispatcherServlet]- FrameworkServlet 'dispatcherServlet': initialization completed in 77 ms
+19:10:28 [INFO][Thread-6][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]- Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@629fd27: startup date [Fri Apr 27 19:09:22 CST 2018]; root of context hierarchy
+19:10:28 [INFO][Thread-6][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Unregistering JMX-exposed beans on shutdown
+19:10:28 [INFO][Thread-6][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Unregistering JMX-exposed beans
+19:10:30 [INFO][restartedMain][com.test.app.SpringBootMain]- Starting SpringBootMain on DESKTOP-4EJ981U with PID 13844 (D:\Users\admin\weip\springbootTest\target\classes started by weipan in D:\Users\admin\weip\springbootTest)
+19:10:30 [INFO][restartedMain][com.test.app.SpringBootMain]- The following profiles are active: test
+19:10:30 [INFO][restartedMain][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@795b065d: startup date [Fri Apr 27 19:10:30 CST 2018]; root of context hierarchy
+19:10:31 [INFO][restartedMain][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:10:31 [INFO][restartedMain][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:10:31 [INFO][restartedMain][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec5d8597] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:10:31 [INFO][restartedMain][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]- Tomcat initialized with port(s): 18081 (http)
+19:10:31 [INFO][localhost-startStop-1][org.springframework.web.context.ContextLoader]- Root WebApplicationContext: initialization completed in 1627 ms
+19:10:31 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.ServletRegistrationBean]- Mapping servlet: 'dispatcherServlet' to [/]
+19:10:31 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'characterEncodingFilter' to: [/*]
+19:10:31 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19:10:31 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19:10:31 [INFO][localhost-startStop-1][org.springframework.boot.web.servlet.FilterRegistrationBean]- Mapping filter: 'requestContextFilter' to: [/*]
+19:10:32 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@795b065d: startup date [Fri Apr 27 19:10:30 CST 2018]; root of context hierarchy
+19:10:32 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19:10:32 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:10:32 [INFO][restartedMain][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:10:32 [INFO][restartedMain][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:10:32 [INFO][restartedMain][org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]- Detected @ExceptionHandler methods in globalExceptionHandler
+19:10:32 [INFO][restartedMain][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:10:32 [INFO][restartedMain][org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping]- Adding welcome page: class path resource [static/index.html]
+19:10:32 [INFO][restartedMain][org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]- LiveReload server is running on port 35729
+19:10:32 [INFO][restartedMain][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Registering beans for JMX exposure on startup
+19:10:32 [INFO][restartedMain][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Bean with name 'dataSource' has been autodetected for JMX exposure
+19:10:32 [INFO][restartedMain][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+19:10:33 [INFO][restartedMain][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]- Tomcat started on port(s): 18081 (http)
+19:10:33 [INFO][restartedMain][com.test.app.SpringBootMain]- Started SpringBootMain in 2.932 seconds (JVM running for 73.038)

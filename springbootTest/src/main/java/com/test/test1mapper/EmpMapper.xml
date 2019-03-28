@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.test1mapper.EmpMapper">
+	<select id="findEmps" resultType="com.test.entity.Emp">
+		SELECT emp.*,dept.deptId as 'dept.deptId',dept.deptName as 'dept.deptName'
+		FROM `emps` emp
+		LEFT JOIN `depts` dept ON emp.`dept_id_fk`=dept.`deptId`
+	</select>
+
+</mapper>

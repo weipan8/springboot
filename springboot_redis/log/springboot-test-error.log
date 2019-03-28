@@ -1,0 +1,190 @@
+14:07:19 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:07:27 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+14:07:44 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:14:18 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:32:16 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:32:23 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+14:32:40 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:35:35 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:37:51 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:39:21 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:45:05 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:47:08 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:47:15 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+14:47:30 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+14:48:52 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:01:02 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:01:07 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method cacheManager in com.redis.config.RedisConfig required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+	- Bean method 'redisTemplate' in 'RedisAutoConfiguration.RedisConfiguration' not loaded because @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) found bean 'redisTemplate'
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
+15:03:53 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:03:57 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redisTemplate in com.redis.config.RedisConfig required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+	- Bean method 'redisTemplate' in 'RedisAutoConfiguration.RedisConfiguration' not loaded because @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) found bean 'redisTemplate'
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
+15:04:52 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:04:57 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method cacheManager in com.redis.config.RedisConfig required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+	- Bean method 'redisTemplate' in 'RedisAutoConfiguration.RedisConfiguration' not loaded because @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) found bean 'redisTemplate'
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
+15:08:15 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:08:49 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:11:27 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:14:14 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:14:20 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+15:14:32 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:15:15 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:15:20 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method cacheManager in com.redis.config.RedisConfig required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+	- Bean method 'redisTemplate' in 'RedisAutoConfiguration.RedisConfiguration' not loaded because @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) found bean 'redisTemplate'
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
+15:15:33 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:15:38 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method cacheManager in com.redis.config.RedisConfig required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+	- Bean method 'redisTemplate' in 'RedisAutoConfiguration.RedisConfiguration' not loaded because @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) found bean 'redisTemplate'
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
+15:17:28 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:19:59 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:21:49 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:25:41 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:25:55 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:29:25 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:42:51 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:45:06 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:48:28 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:48:45 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:56:37 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+15:58:42 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+16:05:15 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+16:08:06 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+16:11:02 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+16:13:00 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+16:17:19 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'
+16:17:27 [ERROR][main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+19:20:01 [ERROR][main][org.springframework.boot.logging.LoggingApplicationListener]- Cannot set level: TRACE   for 'null'

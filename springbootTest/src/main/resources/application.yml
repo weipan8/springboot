@@ -1,0 +1,26 @@
+
+
+spring: 
+  profiles:
+    active: test
+
+
+server.port: 8081
+
+class:
+  name: application.yml
+  id: 1
+  teacher:
+    - teacher1
+    - teacher2
+  stu:
+    name: 小狗
+    age: 12
+    
+    
+value: 
+  test: calsspath
+
+  
+  
+  

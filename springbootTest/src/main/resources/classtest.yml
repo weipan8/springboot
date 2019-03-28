@@ -1,0 +1,10 @@
+   
+class:
+  name: classtest.yml
+  id: 1
+  teacher:
+    - teacher1
+    - teacher2
+  stu:
+    name: 小狗
+    age: 12

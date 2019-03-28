@@ -1,0 +1,41 @@
+
+
+#spring:
+#  resources: 
+#  staticLocations: classpath:/content/
+
+# mybatis_config  
+mybatis:  
+    mapper-locations: classpath:mapper/*.xml 
+    check-config-location: true   
+#datasource  
+spring:  
+    datasource: 
+         test1: 
+            url: jdbc:mysql://localhost:3306/mybatis_test?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC  
+            username: root  
+            password: 123456  
+            # 使用druid数据源  
+            type: com.alibaba.druid.pool.DruidDataSource  
+            driver-class-name: com.mysql.jdbc.Driver 
+         test2:  
+             url: jdbc:oracle:thin:@localhost:1521:orcl  
+             username: scott  
+             password: tiger  
+                # 使用druid数据源  
+             type: com.alibaba.druid.pool.DruidDataSource  
+             driver-class-name: oracle.jdbc.driver.OracleDriver  
+
+
+        
+#spring:   
+#    datasource:  
+#            test2:  
+#                url: jdbc:oracle:thin:@localhost:1521:orcl  
+#                username: scott  
+#                password: tiger  
+#                # 使用druid数据源  
+#                type: com.alibaba.druid.pool.DruidDataSource  
+#                driver-class-name: oracle.jdbc.driver.OracleDriver   
+               
+        
