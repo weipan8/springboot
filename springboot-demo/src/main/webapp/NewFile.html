@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<link rel="stylesheet" type="text/css" href="css/GridManager.css">
+	<link rel="stylesheet" type="text/css" href=bootstrap.min.css>
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" media="all"> 
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="js/GridManager.js"></script>
+	<script type="text/javascript" src="layui/layui.all.js"></script>
+</head>
+<body>
+	
+	<h1 class="well well-lg">springBoot gridManager</h1>
+	
+	<div style="width: 60%;height: 300px;">
+	<table grid-manager="demo-baseCode"  ></table>
+	<input type="button" class="btn btn-default" id="add" value="新增" onclick="testEditFN()">
+	</div>
+	<hr><hr>
+	<div style="width: 60%">
+	<div class="form-inline well">
+	 <input type="text" class="form-control" placeholder="名字" id="sorchtext">
+	 <input type="button" class="btn btn-default" id="sorch" value="搜索">
+	 </div>
+	<table grid-manager="demo-baseCode2"  ></table>
+	</div>
+	
+
+	<form class="layui-form layui-form-pane"  id="edit" action="" style="display: none;">
+	<input type="hidden" id="hiddenid" >
+	  <div class="layui-form-item">
+	    <label class="layui-form-label">名称: </label>
+	    <div class="layui-input-block">
+	      <input type="text" name="name" required  lay-verify="required" placeholder="请输入名称" autocomplete="off" class="layui-input">
+	    </div>
+	  </div>
+	 
+	
+	  <div class="layui-form-item">
+	    <label class="layui-form-label">年龄:</label>
+	    <div class="layui-input-block">
+	      <input type="text" name="age" required  lay-verify="required" placeholder="请输入年龄" autocomplete="off" class="layui-input">
+	    </div>
+	  </div>
+	  <div class="layui-form-item">
+	    <label class="layui-form-label">日期:</label>
+	    <div class="layui-input-block">
+	      <input type="text" class="layui-input" name="birthday"  lay-verify="required" id="datetime" autocomplete="off">
+	    </div>
+	  </div>
+	  <div class="">
+	    <label class="layui-form-label">性别:</label>
+	    <div class="">
+	      <!-- <input lay-ignore type="radio" id="man" name="sex" value="男" title="男">
+	      <input lay-ignore type="radio" name="sex" value="女" title="女" > -->
+	      
+		    <label class="radio-inline"  >
+				<input lay-ignore type="radio" name="sex" id="man" value="男" > 男
+			</label>
+			<label class="radio-inline">
+				<input lay-ignore type="radio" name="sex" id="woman"  value="女" checked> 女
+			</label>
+	      
+	    </div>
+	  </div>
+	 
+	  <div class="layui-form-item">
+	    <div class="layui-input-block">
+	      <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+	      <button type="reset" class="layui-btn layui-btn-primary" id="close">关闭</button>
+	    </div>
+	  </div>
+	</form>
+	 
+	
+	
+	<script type="text/javascript">
+	
+		function   formatDate(now)   {     
+	        var   year=now.getFullYear();     
+	        var   month=now.getMonth()+1;     
+	        var   date=now.getDate();     
+	        var   hour=now.getHours();     
+	        var   minute=now.getMinutes();     
+	        var   second=now.getSeconds();     
+	        return   year+"-"+month+"-"+date+"   "+hour+":"+minute+":"+second;     
+        } 
+	
+	
+	
+	
+		//打开编辑框
+		function testEditFN(id,name,age,sex,birthday){
+			layui.use('layer', function(){
+				  var layer = layui.layer;
+				  var $ = layui.$;
+				 // layer.msg(name+"-"+age+"-"+sex+"-"+birthday);
+				 $("[name='name']").val(name);
+				 $("[name='age']").val(age);
+				$("#hiddenid").val(id);
+				if(birthday>0){
+					 var newDate = new Date();  //实例化一个Date对象  
+					 newDate.setTime(birthday)
+					 var date = formatDate(newDate); 
+					 $("[name='birthday']").val(date);
+				}
+				 if(sex=='男'){
+					 $('#man').prop('checked','checked');
+				 } 
+					 
+				  var a1=layer.open({
+		  			  type: 1,
+		  			  closeBtn: 0,
+		  			  skin: 'layui-layer-rim', //加上边框
+		  			  area: ['436px', '339px'], //宽高
+		  			  content: $("#edit")
+		  			});
+				  
+				  $("#close").click(function(){
+					  $("#edit").hide();
+					  layer.close(a1); 
+				  })
+				  
+				});   
+			
+			
+			/* layer.open({
+		      type: 2,
+		      area: ['600px', '360px'],
+		      shadeClose: true, //点击遮罩关闭
+		      content: $("#edit")
+			}); */
+		}
+		
+		function del(id){
+			$.ajax({
+		        type: 'GET',
+		        url: '/student/del.do',
+		        //Content-Type:'application/json',
+		        data: {"id":id},
+		        dataType: "text", //可以是text，如果用text，返回的结果为字符串；如果需要json格式的，可是设置为json
+		        //contentType:"application/json",
+		        success: function (result) {
+		        	layer.msg("操作成功");
+		        	 $("#edit").hide();
+		        	 table1.GM('refreshGrid',false,function(){});
+		        	layer.closeAll('page');
+		        	//alert(JSON.stringify(result))
+		        },
+		        error: function (msg) {
+		        	
+		            alert(" 数据加载失败！" + msg.statusText);
+		        }
+		    });
+		}
+		
+		var table1 = document.querySelector('table[grid-manager="demo-baseCode"]')
+		table1.GM({
+		    ajax_url: '/student/getAll'
+		    ,ajax_type: 'get'
+		    ,dataKey:'data'
+		    ,supportRemind: true
+		    ,supportAjaxPage:true
+		    //,height:"100%"
+		    ,disableCache: true
+		    ,columnData: [
+		        {
+		            key: 'name',
+		            text: '名称'
+		        },{
+		            key: 'sex',
+		            text: '性别'/* ,
+		            template: function(action, rowObject){
+					    return rowObject.sex==0?'男':'nv'
+				    } */
+		        },{
+		            key: 'age',
+		            text: '年龄'
+		        },{
+		            key: 'birthday',
+		            text: '生日'
+		        },{
+		            key: 'action',
+		            text: '操作',
+		            template: function(action, rowObject){
+					    return '<a class="btn btn-default btn-xs" id="test" '
+					    +'href="javascript:;"onclick=testEditFN('+rowObject.id+',"'+rowObject.name+'",'+rowObject.age+',"'+rowObject.sex+'","'+Date.parse(new Date(rowObject.birthday))+'")>编辑</a>' 
+					    +'<a class="btn btn-default btn-xs" href="javascript:;" onclick=del('+rowObject.id+')>删除</a>';
+				    }
+		        }
+		    ]
+		})
+		
+		//监听提交事件
+		layui.use('form', function(){
+		  var form = layui.form;
+		  form.render();
+		  //监听提交
+		  form.on('submit(formDemo)', function(data){
+			var jsonobj= data.field;
+			if($("#hiddenid").val()!=""){
+				jsonobj.id=$("#hiddenid").val();
+		 	 }
+			var data= JSON.stringify(jsonobj);
+		    layer.msg(data);
+			  $.ajax({
+			        type: 'POST',
+			        url: '/student/saveAndFlush',
+			        //Content-Type:'application/json',
+			        data: data,
+			        dataType: "json", //可以是text，如果用text，返回的结果为字符串；如果需要json格式的，可是设置为json
+			        contentType:"application/json",
+			        success: function (result) {
+			        	layer.msg("操作成功");
+			        	 $("#edit").hide();
+			        	 table1.GM('refreshGrid',false,function(){});
+			        	layer.closeAll('page');
+			        	//alert(JSON.stringify(result))
+			        },
+			        error: function (msg) {
+			        	
+			            alert(" 数据加载失败！" + msg.statusText);
+			        }
+			    });
+			  
+		    
+		    return false;
+		  });
+		});
+		
+		layui.use('laydate', function(){
+		  var laydate = layui.laydate;
+		  //执行一个laydate实例
+		  laydate.render({
+		    elem: '#datetime' //指定元素
+		    ,type:'datetime'
+		  });
+		});
+		
+		
+		var table = document.querySelector('table[grid-manager="demo-baseCode2"]')
+		table.GM({
+		    ajax_url: '/student/getAll4PageAndCondition'
+		    ,ajax_type: 'get'
+		    ,dataKey:'content'
+		    ,pageSize:5
+		    ,sizeData:[5,10,20]
+		    ,totalsKey:'totalElements'
+		    ,supportRemind: true
+		    ,supportAjaxPage:true
+		    ,height:"250px"
+		    ,disableCache: true
+		    ,columnData: [
+		        {
+		            key: 'name',
+		            text: '名称'
+		        },{
+		            key: 'sex',
+		            text: '性别'/* ,
+		            template: function(action, rowObject){
+					    return rowObject.sex==0?'男':'nv'
+				    } */
+		        },{
+		            key: 'age',
+		            text: '年龄'
+		        },{
+		            key: 'birthday',
+		            text: '生日'
+		        }
+		    ]
+		})
+		
+		
+	</script>
+	
+	<script type="text/javascript">
+		$(function(){
+			
+			$("#sorch").click(function(){
+				table.GM('setQuery', {'name':$("#sorchtext").val()})
+				//document.querySelector('table[grid-manager="demo-baseCode2"]').GM('setQuery',{'name':$("#sorchtext").val()});
+			})
+		
+		})
+	</script>
+</body>
+</html>
